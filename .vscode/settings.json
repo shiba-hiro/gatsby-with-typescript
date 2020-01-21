@@ -1,0 +1,16 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "eslint.alwaysShowStatus": true,
+    "eslint.options": {
+        "extensions": [
+            ".js",
+            ".ts",
+            ".tsx"
+        ]
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+}
