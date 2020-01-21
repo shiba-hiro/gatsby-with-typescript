@@ -1,21 +1,20 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-with-typescript",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A simplified bare-bones starter for Gatsby with TypeScript",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "yarn typecheck && yarn jest && yarn lint",
     "typecheck": "tsc",
     "lint": "eslint ./ --ext .js,.ts,.tsx,.jsx --format visualstudio --no-color --max-warnings 10 --report-unused-disable-directives --ignore-pattern 'public/*' --ignore-pattern 'coverage/*' --ignore-pattern 'node_modules/*' ",
     "lint:fix": "yarn lint --fix",
-    "jest": "echo 'TODO: write jest specs'",
-    "precommit": "yarn test"
+    "jest": "echo 'TODO: write jest specs'"
   },
   "dependencies": {
     "gatsby": "^2.18.12",
@@ -39,9 +38,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/shiba-hiro/gatsby-with-typescript"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
   }
 }
